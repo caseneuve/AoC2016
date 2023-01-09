@@ -1,9 +1,7 @@
 (ns day01.solution
   (:require [input :refer [f->str]]
+            [grid :refer [manhattan v+]]
             [clojure.set :refer [intersection]]))
-
-(defn manhattan [[ax ay] [bx by]] (+ (abs (- ax bx)) (abs (- ay by))))
-(defn v+ [v1 v2] (map #(apply + %) (mapv vector v1 v2)))
 
 (defn parse [it]
   (->> it (re-seq #"(\D)(\d+)") (map (fn [[_ a b]] [({"R" 1 "L" -1} a) (parse-long b)]))))

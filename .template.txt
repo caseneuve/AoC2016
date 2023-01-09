@@ -1,6 +1,5 @@
 (ns day%02d.solution
-  (:require [input :refer [f->str]]
-            [clojure.string :refer [split-lines split]]))
+  (:require [input :refer [f->str]]))
 
 (defn -main [day]
   (let [input (->> day)]

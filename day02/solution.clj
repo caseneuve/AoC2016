@@ -1,6 +1,5 @@
 (ns day02.solution
-  (:require [input :refer [f->str]]
-            [grid :refer [v+]]))
+  (:require [input :refer [f->str]]))
 
 (def KP1 [[-1 -1] [0 -1] [1 -1]
           [-1  0] [0  0] [1  0]
@@ -21,7 +20,7 @@
 (defn solve [it kp fmt]
   (->> (reduce
         (fn [[bts pos] dirs]
-          (let [p (reduce #(if-let [np (some #{(v+ %1 %2)} kp)] np %1) pos dirs)
+          (let [p (reduce #(if-let [np (some #{(mapv + %1 %2)} kp)] np %1) pos dirs)
                 b (inc (.indexOf kp p))]
             [(conj bts b) p]))
         [[] (kp (dec 5))] it)

@@ -1,6 +1,6 @@
 (ns day01.solution
   (:require [input :refer [f->str]]
-            [grid :refer [manhattan v+]]
+            [grid :refer [manhattan]]
             [clojure.set :refer [intersection]]))
 
 (defn parse [it]
@@ -12,7 +12,7 @@
           (let [visited (conj visited pos)
                 dir (mod (+ dir turn) 4)
                 nesw ([[0 1] [1 0] [0 -1] [-1 0]] dir)
-                route (->> pos (iterate #(v+ nesw %)) rest (take steps))
+                route (->> pos (iterate #(mapv + nesw %)) rest (take steps))
                 seen (intersection (set route) visited)]
             (if (or (= p 1) (empty? seen)) [(last route) dir (into visited route)] (reduced seen))))
         [[0 0] 0 #{}] it)

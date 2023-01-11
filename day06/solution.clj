@@ -2,7 +2,7 @@
   (:require [input :refer [f->lines lines]]))
 
 (def r->c #(apply mapv vector %))
-(def common #(->> % frequencies (sort-by val) ((juxt first last)) (map first)))
+(def common #(->> % frequencies (sort-by val) keys ((juxt first last))))
 (defn solve [it] (->> it r->c (map common) r->c (map #(apply str %))))
 
 (defn -main [day] (->> day f->lines solve (zipmap [:part2 :part1])))

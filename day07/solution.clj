@@ -3,11 +3,10 @@
             [clojure.string :refer [replace]]
             [clojure.set :refer [intersection]]))
 
-(def hyper #(map second (re-seq #"\[(\w+)\]" %)))
-(def non-hyper #(re-seq #"\w+" (replace % #"\[\w+\]" " ")))
-
 (defn abx [s n in?]
-  (reduce into [] (map (partial partition n 1) ((if in? hyper non-hyper) s))))
+  (let [in #(map second (re-seq #"\[(\w+)\]" %))
+        out #(re-seq #"\w+" (replace % #"\[\w+\]" " "))]
+    (reduce into [] (map (partial partition n 1) ((if in? in out) s)))))
 
 (defn abba [it in?]
   (reduce
@@ -23,7 +22,6 @@
    #{} (abx it 3 in?)))
 
 (defn ssl [it] (if (first (intersection (aba it true) (aba it false))) 1 0))
-
 
 (defn -main [day]
   (let [solve #(->> (f->lines day) (map %) (apply +))]

@@ -16,7 +16,7 @@ headers for e.g. puzzle input page when logged into the AoC account).
 
 All input should go to common directory `input/`, each day having a format `dayNN`.
 
-* Clojure (via babashka)
+## Clojure (via babashka)
 
 Configuration is stored in `bb.edn`.
 
@@ -34,7 +34,7 @@ boot       fetch input data and create template for given date
 solve      run solution for given day [day defaults to today]
 ```
 
-* Solutions
+## Solutions
 
 Day | Clojure 
 ---:|------------------------- 

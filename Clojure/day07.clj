@@ -1,4 +1,4 @@
-(ns day07.solution
+(ns day07
   (:require [input :refer [f->lines lines]]
             [clojure.string :refer [replace]]
             [clojure.set :refer [intersection]]))

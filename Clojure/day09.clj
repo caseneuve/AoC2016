@@ -1,4 +1,4 @@
-(ns day09.solution
+(ns day09
   (:require [input :refer [f->str]]))
 
 (defn decompress [it p]

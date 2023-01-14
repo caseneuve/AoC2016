@@ -1,4 +1,4 @@
-(ns day02.solution
+(ns day02
   (:require [input :refer [f->str]]))
 
 (def KP1 [[-1 -1] [0 -1] [1 -1]

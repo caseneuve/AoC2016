@@ -1,4 +1,4 @@
-(ns day01.solution
+(ns day01
   (:require [input :refer [f->str]]
             [grid :refer [manhattan]]
             [clojure.set :refer [intersection]]))

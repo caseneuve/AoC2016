@@ -1,4 +1,4 @@
-(ns day%02d.solution
+(ns day10
   (:require [input :refer [f->str]]))
 
 (defn -main [day]

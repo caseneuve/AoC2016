@@ -1,4 +1,4 @@
-(ns day06.solution
+(ns day06
   (:require [input :refer [f->lines lines]]))
 
 (def r->c #(apply mapv vector %))

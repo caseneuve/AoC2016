@@ -1,4 +1,4 @@
-(ns day03.solution
+(ns day03
   (:require [input :refer [f->nums]]))
 
 (defn transpose [m] (apply mapv vector m))

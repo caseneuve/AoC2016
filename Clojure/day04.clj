@@ -1,4 +1,4 @@
-(ns day04.solution
+(ns day04
   (:require [input :refer [f->str]]))
 
 (defn parse [it] (re-seq #"((\D+)(\d+))\[(\w+)\]\n?" it))

@@ -1,0 +1,49 @@
+#+title: Advent of Code 2016 solutions
+
+* Configuration
+
+Create =.env= file with contents:
+
+#+begin_src 
+AOC_SESSION=XXXXX
+YEAR=XXXX
+#+end_src
+
+Where =AOC_SESSION= is the session cookie (to be found in request
+headers for e.g. puzzle input page when logged into the AoC account).
+
+=YEAR= is optional -- if not specified, current year will be used.
+
+All input should go to common directory =input/=, each day having a format =dayNN=.
+
+* Clojure (via babashka)
+
+Configuration is stored in =bb.edn=.
+
+To install dependencies, just run =bb= command.
+
+To see available tasks, run =bb tasks=.
+
+#+begin_src sh
+$ bb tasks
+The following tasks are available:
+
+template   create template for solution [day and year default to current]
+fetch      get input for given day [requires session token stored in `.env` file ; args default to today]
+boot       fetch input data and create template for given date
+solve      run solution for given day [day defaults to today]
+#+end_src
+
+* Solutions
+
+| Day | Clojure |
+|-----+---------|
+|   1 | [[Clojure/day01.js][[x]​]]     |
+|   2 | [[Clojure/day02.clj][[x]​]]     |
+|   3 | [[Clojure/day03.clj][[x]​]]     |
+|   4 | [[Clojure/day04.clj][[x]​]]​     |
+|   5 | [ ]​     |
+|   6 | [[Clojure/day06.clj][[x]​]]​     |
+|   7 | [[Clojure/day07.clj][[x]​]]​     |
+|   8 | [[Clojure/day08.clj][[x]​]]​     |
+|   9 | [[Clojure/day09.clj][[x]​]]​     |

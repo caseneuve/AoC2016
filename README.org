@@ -36,14 +36,16 @@ solve      run solution for given day [day defaults to today]
 
 * Solutions
 
-| Day | Clojure |
-|-----+---------|
-|   1 | [[Clojure/day01.js][[x]​]]     |
-|   2 | [[Clojure/day02.clj][[x]​]]     |
-|   3 | [[Clojure/day03.clj][[x]​]]     |
-|   4 | [[Clojure/day04.clj][[x]​]]​     |
-|   5 | [ ]​     |
-|   6 | [[Clojure/day06.clj][[x]​]]​     |
-|   7 | [[Clojure/day07.clj][[x]​]]​     |
-|   8 | [[Clojure/day08.clj][[x]​]]​     |
-|   9 | [[Clojure/day09.clj][[x]​]]​     |
+#+begin_src markdown
+Day | Clojure 
+---:|------------------------- 
+1   | [[x]](Clojure/day01.clj)
+2   | [[x]](Clojure/day02.clj)
+3   | [[x]](Clojure/day03.clj) 
+4   | [[x]](Clojure/day04.clj) 
+5   | [ ]
+6   | [[x]](Clojure/day06.clj) 
+7   | [[x]](Clojure/day07.clj) 
+8   | [[x]](Clojure/day08.clj) 
+9   | [[x]](Clojure/day09.clj)
+#+end_src

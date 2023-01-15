@@ -38,12 +38,13 @@ solve      run solution for given day [day defaults to today]
 
 Day | Clojure 
 ---:|------------------------- 
-1   | [[x]](Clojure/day01.clj)
-2   | [[x]](Clojure/day02.clj)
-3   | [[x]](Clojure/day03.clj) 
-4   | [[x]](Clojure/day04.clj) 
-5   | [ ]
-6   | [[x]](Clojure/day06.clj) 
-7   | [[x]](Clojure/day07.clj) 
-8   | [[x]](Clojure/day08.clj) 
-9   | [[x]](Clojure/day09.clj)
+ 1  | [[x]](Clojure/day01.clj)
+ 2  | [[x]](Clojure/day02.clj)
+ 3  | [[x]](Clojure/day03.clj) 
+ 4  | [[x]](Clojure/day04.clj) 
+ 5  | [ ]
+ 6  | [[x]](Clojure/day06.clj) 
+ 7  | [[x]](Clojure/day07.clj) 
+ 8  | [[x]](Clojure/day08.clj) 
+ 9  | [[x]](Clojure/day09.clj)
+10  | [[x]](Clojure/day10.clj)

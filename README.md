@@ -6,7 +6,7 @@ Create `.env` file with contents:
 
 ```
 AOC_SESSION=XXXXX
-YEAR=XXXX
+YEAR=2016
 ```
 
 Where `AOC_SESSION` is the session cookie (to be found in request
@@ -48,3 +48,5 @@ Day | Clojure
  8  | [[x]](Clojure/day08.clj) 
  9  | [[x]](Clojure/day09.clj)
 10  | [[x]](Clojure/day10.clj)
+11  | [ ]
+12  | [[x]](Clojure/day12.clj)

@@ -7,7 +7,7 @@
   (reduce (fn [a e] (if (apply = e) (reduced (first e)) a)) nil (partition n 1 h)))
 
 (defn key64 [it n]
-  (loop [i 0, [h & hr] (hashes it n) , hm {}, hs []]
+  (loop [i 0, [h & hr] (hashes it n), hm {}, hs []]
     (cond
       (> (count hs) 63) (nth (sort hs) 63)
       :else (let [k3 (same-chars 3 h), k5 (when k3 (same-chars 5 h))

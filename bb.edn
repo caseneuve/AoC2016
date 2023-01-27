@@ -1,5 +1,6 @@
 {:paths ["input" "Clojure"]
- :deps {org.clojure/math.combinatorics {:mvn/version "0.1.6"}}
+ :deps {org.clojure/math.combinatorics {:mvn/version "0.1.6"}
+        org.clj-commons/digest {:mvn/version "1.4.100"}}
  :tasks
  {:requires ([babashka.curl :as curl]
              [babashka.fs :as fs]

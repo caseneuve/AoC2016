@@ -17,7 +17,7 @@
 
 ;; part 1 takes around half a sec, but part 2 runs for more than a minute -- weak performance of `md5`
 
-(defn -main [day]
+(defn -main [_]
   (let [it "ihaygndm", solve (partial key64 it)]
     {:part1 (solve 1) :part2 (solve 2017)}))
 

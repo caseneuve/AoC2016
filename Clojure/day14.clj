@@ -15,7 +15,7 @@
         ;; (when (= (mod i 1000) 0) (prn (/ i 1000) (count hs)))
         (recur (inc i) hr (cond-> hm k3 (update k3 conj i)) (if (seq idx) (into hs idx) hs))))))
 
-;; part 1 takes around half a sec, but part 2 runs for more than a minute -- weak performance of `md5`
+;; part 1 takes around half a sec, but part 2 runs for more than a minute -- weak `md5` performance
 
 (defn -main [_]
   (let [it "ihaygndm", solve (partial key64 it)]
@@ -23,5 +23,5 @@
 
 
 (comment
-  (= 22728 (key64 "abc" 1))             ; not testing part2, takes too long
+  (= 22728 (key64 "abc" 1))             ; not testing part2 here, takes too long
   )

@@ -21,9 +21,9 @@
               (let [[a b] (subs h 5 7)]
                 ;; a poor man's optimization: inc by the lowest difference between ids of two matching hashes
                 (recur (+ 107653 i)
-                       [(conj p1 a) (cond-> p2 (contains? idx a) (update (parse-long (str a)) #(or % b)))]
+                       [(conj p1 a) (cond-> p2 (contains? idx a) (assoc (parse-long (str a)) b))]
                        (disj idx a)))
-              :else (do (when (= 0 (mod i 50)) (display pwd))
+              :else (do (when (= 0 (mod i 100)) (display pwd))
                         (recur (inc i) pwd idx)))))
         solve #(->> passwords % (take 8) (apply str))]
     (show-cursor)

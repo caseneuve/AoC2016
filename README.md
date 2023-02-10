@@ -36,20 +36,21 @@ solve      run solution for given day [day defaults to today]
 
 ## Solutions
 
-Day | Clojure 
----:|------------------------- 
- 1  | [[x]](Clojure/day01.clj)
- 2  | [[x]](Clojure/day02.clj)
- 3  | [[x]](Clojure/day03.clj) 
- 4  | [[x]](Clojure/day04.clj) 
- 5  | [[x]](Clojure/day05.clj) 
- 6  | [[x]](Clojure/day06.clj) 
- 7  | [[x]](Clojure/day07.clj) 
- 8  | [[x]](Clojure/day08.clj) 
- 9  | [[x]](Clojure/day09.clj)
-10  | [[x]](Clojure/day10.clj)
-11  | [ ]
-12  | [[x]](Clojure/day12.clj)
-13  | [[x]](Clojure/day13.clj)
-14  | [[x]](Clojure/day14.clj)
-15  | [[x]](Clojure/day15.clj)
+Day | Clojure                  | Notes 
+---:|--------------------------|-------------
+ 1  | [[x]](Clojure/day01.clj) | 
+ 2  | [[x]](Clojure/day02.clj) |
+ 3  | [[x]](Clojure/day03.clj) | 
+ 4  | [[x]](Clojure/day04.clj) | 
+ 5  | [[x]](Clojure/day05.clj) | 
+ 6  | [[x]](Clojure/day06.clj) | 
+ 7  | [[x]](Clojure/day07.clj) | 
+ 8  | [[x]](Clojure/day08.clj) | 
+ 9  | [[x]](Clojure/day09.clj) |
+10  | [[x]](Clojure/day10.clj) |
+11  | [ ]                      |
+12  | [[x]](Clojure/day12.clj) |
+13  | [[x]](Clojure/day13.clj) |
+14  | [[x]](Clojure/day14.clj) |
+15  | [[x]](Clojure/day15.clj) |
+16  | [[x]](Clojure/day16.clj) | opt. needed

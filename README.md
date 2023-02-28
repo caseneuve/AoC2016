@@ -54,3 +54,4 @@ Day | Clojure                  | Notes
 14  | [[x]](Clojure/day14.clj) |
 15  | [[x]](Clojure/day15.clj) |
 16  | [[x]](Clojure/day16.clj) | opt. needed
+17  | [[x]](Clojure/day17.clj) |

@@ -9,7 +9,7 @@
                (fn [n lcr] (conj n (if (contains? traps lcr) \^ \.)))
                [] (partition 3 1 (conj (vec (concat [\.] r)) \.))))]
     (loop [row input, result {:part1 nil :part2 0}, n 0]
-      (when (= 0 (mod n 10000)) (prn n (result :part2)))
+      ;; (when (= 0 (mod n 10000)) (prn n (result :part2)))
       (if (= n 400000) result
           (recur (nxt row)
                  (cond-> result

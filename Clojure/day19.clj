@@ -45,7 +45,7 @@
   ;; 6 3
   ;; 7 5
   ;; 8 7
-  ;; 9 9 -> 3^2 resets on powers of 3
+  ;; 9 9 -> 3^2 syncs on powers of 3, resets to 1 afterwards
   ;; ====
   ;; 10 1
   ;; ... goes up by 1 til 18, then goes up by 2 until reaches next power of 3, i.e. 3^3

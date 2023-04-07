@@ -57,3 +57,4 @@ Day | Clojure                  | Notes
 17  | [[x]](Clojure/day17.clj) |
 18  | [[x]](Clojure/day18.clj) |
 19  | [[x]](Clojure/day19.clj) |
+20  | [[x]](Clojure/day20.clj) |
